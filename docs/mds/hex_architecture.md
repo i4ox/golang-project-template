@@ -1,7 +1,7 @@
 <!--markdownlint-disable MD013-->
 # Архитетура проекта
 
-![architecture](./docs/img/architecture.png)
+![architecture](../img/architecture.png)
 
 На бекенде часть **бизнес-логика оказывается связанной с
 базой данных или со внешними библиотеками и сервсами**.
