@@ -1,0 +1,10 @@
+---
+database:
+  url:
+    "postgres://booking_user:booking_pass@localhost:5432/booking_db?sslmode=disable"
+  user: "booking_user"
+  password: "booking_pass"
+  name: "booking_db"
+  port: 5432
+  host: "localhost"
+  sslmode: "disable"
