@@ -1,0 +1,12 @@
+---
+version: "3"
+
+tasks:
+  migrate_up:
+    desc: "Запуск и выполнение миграций"
+    cmds:
+      - go run ./cmd/migrate/main.go -action up
+  migrate_down:
+    desc: "Откат миграций"
+    cmds:
+      - go run ./cmd/migrate/main.go -action down

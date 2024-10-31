@@ -20,6 +20,18 @@
 
 Детально про архитектуру применяемую в данном шаблоне можно прочитать [здесь](./docs/mds/hex_architecture.md).
 
+## Taskfilee
+
+В данном шаблоне вместо Makefile используется [Taskfile](https://taskfile.dev).
+
+Чтобы установить:
+
+```sh
+go install github.com/go-task/task/v3/cmd/task@latest
+```
+
+Далее через `task` можно вызывать команды описанные в `Taskfile.yaml`.
+
 ## Миграции
 
 Данный проект поддерживает миграции:
@@ -36,12 +48,16 @@ go run ./cmd/migrate/main.go --help
 
 ```sh
 go run ./cmd/migrate/main.go -action up
+# или
+task migrate_up
 ```
 
 Чтобы очистить миграции:
 
 ```sh
 go run ./cmd/migrate/main.go -action down
+# или
+task migrate_down
 ```
 
 Для принудительного выполнения определенных шагов:
